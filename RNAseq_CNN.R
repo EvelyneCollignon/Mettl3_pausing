@@ -8,7 +8,7 @@ library(edgeR)
 
 # 1. Formatting tables as needed for downstream analysis
 
-  # Uploading raw tables (for genes and ERCC spikes)
+  # Uploading raw tables (for genes and ERCC spikes). These files have been uploaded to the github repository.
 
 Exp <- read.table("path", row.names = 1)
 ercc_expr <- read.table("path", row.names = 1)
