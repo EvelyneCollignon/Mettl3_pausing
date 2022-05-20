@@ -54,7 +54,7 @@ tmp <- contrasts.fit(fit, contr)
 tmp <- eBayes(tmp)
 top.table <- topTable(tmp, sort.by = "P", n = Inf)
 
-  #Bring back peak information and export
+  # Bring back peak information and export
 
 counts <- data.frame(y$E)
 counts$ID <- rownames(counts)
