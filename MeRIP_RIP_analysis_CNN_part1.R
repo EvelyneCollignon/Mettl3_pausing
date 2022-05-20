@@ -13,7 +13,7 @@ library(edgeR)
 # 1. Formatting tables as needed for downstream analysis
 
   # Uploading raw tables for peaks. This file has been uploaded to the github repository.
-  # The peak information (seqnames, start, end) is saved separately and will be merged back later
+  # The peak information (seqnames, start, end, GeneID) is saved separately and will be merged back later
 
 Peaks <- read.table(file="path")
 Ref <- Peaks[,c(1:3,10)]
