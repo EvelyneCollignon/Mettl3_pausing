@@ -8,7 +8,7 @@
 #       -Part2 (other script) adjusts RIP values to consider changes in genes expression (based on input CNN values)
 
 library(edgeR)
-
+library(tidyverse)
 
 # 1. Formatting tables as needed for downstream analysis
 
