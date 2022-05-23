@@ -20,7 +20,7 @@ Ref <- Peaks[,c(1:3,10)]
 rownames(Peaks)<- paste("ref", 1:nrow(Ref))
 Ref$ID <- paste("ref", 1:nrow(Ref))
 Peaks <- unique(Peaks[,-10]) # removing duplicated peaks, i.e. those that mapped to more than 1 gene
-spike <- c(1,	1.33564167,	1.237347774,	1.53725346,	1.944077862,	1.998910646) # human/mouse mapped reads (in percent) for each sample
+spike <- c(1,	1.33564167,	1.237347774,	1.53725346,	1.944077862,	1.998910646) # human/mouse mapped reads for each sample (relative to sample1)
 d0 <- DGEList(Peaks[,c(7:9,4:6)]) #reordering columns (FBS first, paused second)
 N <- colSums(Peaks[,c(7:9,4:6)])  #reordering columns (FBS first, paused second)
 
