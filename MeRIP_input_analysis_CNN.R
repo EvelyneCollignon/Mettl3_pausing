@@ -12,7 +12,7 @@ library(edgeR)
   # Uploading raw tables. This file has been uploaded to the github repository.
 
 Exp <- read.table(file="path")
-spike <- c(1,1.325026943,1.230524841,1.882893653,	2.164883885,2.305161538) # human/mouse mapped reads (in percent) for each sample
+spike <- c(1,1.325026943,1.230524841,1.882893653,	2.164883885,2.305161538) # human/mouse mapped reads for each sample (relative to sample 1)
 N <- colSums(Exp)
 d0 <- DGEList(Exp)
 
